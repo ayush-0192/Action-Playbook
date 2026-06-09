@@ -2,6 +2,9 @@ name: Env Demo
 
 on:
     push:
+        branches:
+            #- main
+            - dev
 env:
     APP_NAME: action-workflow
     ENVIRONMENT: dev
@@ -13,5 +16,5 @@ jobs:
         steps:
             - run: echo $APP_NAME
             - run: echo $ENVIRONMENT
-            
+
 
