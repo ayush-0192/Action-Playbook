@@ -1,0 +1,14 @@
+name: multiple step
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    demo:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "step 1"
+            - run: echo "step 2"
+            - run: echo "step 3"
