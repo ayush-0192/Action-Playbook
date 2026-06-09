@@ -1,0 +1,14 @@
+name: Runner Exploration
+
+on:
+    workflow_dispatch
+
+jobs:
+    explore:
+        runs-on: ubuntu-latest
+        steps:
+            - run: pwd
+            - run: whoami
+            - run: date
+            - run: uname -a
+            - run: ls -la
